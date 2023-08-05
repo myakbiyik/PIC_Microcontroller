@@ -1,0 +1,279 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+idloc IDLOC 5 2000 2000 4 2 1
+end_init CODE 0 0 0 1 2 1
+config CONFIG 4 2007 2007 1 2 1
+$dist/default/production\MPLAB_X.production.o
+cinit CODE 0 3E7 3E7 19 2 1
+idloc IDLOC 5 2000 2000 4 2 1
+text1 CODE 0 3B8 3B8 2F 2 1
+nvBANK0 BANK0 1 1C 1C 1 1 1
+maintext CODE 0 395 395 23 2 1
+cstackBANK0 BANK0 1 19 19 3 1 1
+bssBANK0 BANK0 1 16 16 3 1 1
+idataBANK0 CODE 0 38B 38B A 2 1
+dataBANK0 BANK0 1 C C A 1 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 1D-4D 1
+BANK0 1D-4D 1
+CONST 1-38A 2
+ENTRY 1-38A 2
+CODE 1-38A 2
+SFR0 0-B 1
+SFR1 80-CD 1
+EEDATA 2100-213F 2
+STRCODE 1-38A 2
+STRING 1-38A 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\MPLAB_X.production.o
+3E7 cinit CODE >205:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3E7 cinit CODE >208:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3E7 cinit CODE >231:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3E8 cinit CODE >232:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3E9 cinit CODE >233:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3EA cinit CODE >234:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3EB cinit CODE >235:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3EC cinit CODE >236:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3ED cinit CODE >237:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3EE cinit CODE >238:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3EF cinit CODE >239:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F0 cinit CODE >240:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F1 cinit CODE >241:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F2 cinit CODE >242:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F3 cinit CODE >243:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F4 cinit CODE >244:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F5 cinit CODE >245:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F6 cinit CODE >246:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F7 cinit CODE >247:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F8 cinit CODE >248:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3F9 cinit CODE >249:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3FA cinit CODE >250:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3FB cinit CODE >254:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3FC cinit CODE >255:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3FD cinit CODE >256:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3FE cinit CODE >262:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3FE cinit CODE >264:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3FF cinit CODE >265:C:\Users\MYA\AppData\Local\Temp\xcAs2rk.s
+3B8 text1 CODE >45:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3B8 text1 CODE >47:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3BB text1 CODE >49:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3BD text1 CODE >51:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3C2 text1 CODE >53:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3C3 text1 CODE >54:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3C9 text1 CODE >55:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3CA text1 CODE >56:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3CB text1 CODE >57:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3CB text1 CODE >59:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3CC text1 CODE >60:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3D2 text1 CODE >61:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3D3 text1 CODE >63:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3D5 text1 CODE >63:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3DE text1 CODE >63:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3E2 text1 CODE >63:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3E6 text1 CODE >64:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+395 maintext CODE >19:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+395 maintext CODE >21:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+397 maintext CODE >22:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+398 maintext CODE >24:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+398 maintext CODE >26:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+39C maintext CODE >26:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3A1 maintext CODE >28:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3A4 maintext CODE >28:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3A9 maintext CODE >30:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3AA maintext CODE >31:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3B0 maintext CODE >32:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3B5 maintext CODE >34:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3B6 maintext CODE >35:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+3B7 maintext CODE >39:D:\PIC_Microcontroller\Project_5_TWO_SEVEN_SEGMENT_DISPLAY\MPLAB_X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_i 18 0 BANK0 1 bssBANK0 dist/default/production\MPLAB_X.production.o
+_k 1C 0 BANK0 1 nvBANK0 dist/default/production\MPLAB_X.production.o
+___latbits 0 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 400 0 ABS 0 - -
+__Hspace_1 1D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+_main 72A 0 CODE 0 maintext dist/default/production\MPLAB_X.production.o
+btemp 4E 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+start 0 0 CODE 0 init C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+_scanningFunc 770 0 CODE 0 text1 dist/default/production\MPLAB_X.production.o
+wtemp0 4E 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___stackhi 0 0 ABS 0 - C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+___stacklo 0 0 ABS 0 - C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+__end_of_scanningFunc 7CE 0 CODE 0 text1 dist/default/production\MPLAB_X.production.o
+start_initialization 7CE 0 CODE 0 cinit dist/default/production\MPLAB_X.production.o
+__pcstackBANK0 19 0 BANK0 1 cstackBANK0 dist/default/production\MPLAB_X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 BANK1 1 bank1 -
+__Hcinit 800 0 CODE 0 cinit -
+__Hidloc 4008 0 IDLOC 5 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 BANK1 1 bank1 -
+__Lcinit 7CE 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 5 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 1C 0 BANK0 1 nvBANK0 dist/default/production\MPLAB_X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RA0 28 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+_RA1 29 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+__S0 400 0 ABS 0 - -
+__S1 1D 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\MYA\AppData\Local\Temp\xcAs2rk.o
+__pdataBANK0 C 0 BANK0 1 dataBANK0 dist/default/production\MPLAB_X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pmaintext 72A 0 CODE 0 maintext dist/default/production\MPLAB_X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_segment C 0 BANK0 1 dataBANK0 dist/default/production\MPLAB_X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 7FC 0 CODE 0 cinit dist/default/production\MPLAB_X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 770 0 CODE 0 text1 dist/default/production\MPLAB_X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 7FC 0 CODE 0 cinit dist/default/production\MPLAB_X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 716 0 CODE 0 idataBANK0 dist/default/production\MPLAB_X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\MPLAB_X.production.o
+scanningFunc@m 19 0 BANK0 1 cstackBANK0 dist/default/production\MPLAB_X.production.o
+__Hend_init 2 0 CODE 0 end_init -
+__end_of_main 770 0 CODE 0 maintext dist/default/production\MPLAB_X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\MPLAB_X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 7CE 0 CODE 0 cinit dist/default/production\MPLAB_X.production.o
+__pbssBANK0 16 0 BANK0 1 bssBANK0 dist/default/production\MPLAB_X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 4E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 3E7 7CE 19 2
+text1 0 3B8 770 2F 2
+maintext 0 395 72A 23 2
+reset_vec 0 0 0 1 2
+idataBANK0 0 38B 716 A 2
+dataBANK0 1 C C 11 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
